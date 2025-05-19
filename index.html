@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyuboslav Terziev</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background: linear-gradient(to bottom, #f5e3bb, #e1c691);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .card {
-            background: white;
-            width: 320px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .card img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-        }
-        .info {
-            padding: 20px;
-        }
-        .name {
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .title {
-            color: #555;
-            margin-bottom: 15px;
-        }
-        .contact {
-            text-align: left;
-            padding: 0 20px 20px;
-            font-size: 0.95rem;
-            color: #333;
-        }
-        .contact div {
-            margin-bottom: 10px;
-        }
-        .contact a {
-            color: #333;
-            text-decoration: none;
-        }
-        .btn {
-            display: block;
-            background: #a57e48;
-            color: white;
-            margin: 0 auto 20px;
-            padding: 10px 25px;
-            border-radius: 25px;
-            width: fit-content;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyuboslav Terziev | Project Manager</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #000;
+      color: #e1c691;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background-color: #111;
+      border: 1px solid #a57e48;
+      border-radius: 20px;
+      padding: 30px 20px;
+      width: 360px;
+      box-shadow: 0 0 20px rgba(229, 194, 145, 0.2);
+      text-align: center;
+    }
+    .logo {
+      width: 100px;
+      margin: 0 auto 20px;
+    }
+    .logo-full {
+      width: 200px;
+      margin: 0 auto 20px;
+    }
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #e1c691;
+      margin-bottom: 15px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin: 5px 0 20px;
+      color: #c2a36e;
+    }
+    .contact-info {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #e9d7aa;
+    }
+    .qr-code {
+      margin: 20px 0;
+      width: 180px;
+      height: auto;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      background: #a57e48;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <div class="card">
-        <img src="profile.jpg" alt="Lyuboslav Terziev">
-        <div class="info">
-            <div class="name">Lyuboslav Terziev</div>
-            <div class="title">Project Manager</div>
-        </div>
-        <div class="contact">
-            <div>📞 <a href="tel:+359896772336">+359 896 772336</a></div>
-            <div>📧 <a href="mailto:lyuboslav@mova.bg">lyuboslav@mova.bg</a></div>
-            <div>🌐 <a href="https://www.facebook.com/profile.php?id=61575649376514" target="_blank">Facebook</a></div>
-            <div>🏢 Mova Media</div>
-        </div>
-        <a class="btn" href="Lyuboslav_Terziev_Universal.vcf" download>+ Add to Contacts</a>
+  <div class="card">
+    <img src="logo_full.png" alt="Mova Logo" class="logo-full" />
+    <img src="profile.jpg" alt="Lyuboslav Terziev" class="profile-img" />
+    <h1>Lyuboslav Terziev</h1>
+    <h2>Project Manager</h2>
+    <div class="contact-info">
+      ☎️ +359 896 772336<br />
+      ✉️ lyuboslav@mova.bg<br />
+      🌐 <a href="https://www.facebook.com/profile.php?id=61575649376514" style="color: #e1c691;">Facebook</a>
     </div>
+    <img src="qr.png" alt="QR Code" class="qr-code" />
+    <a href="Lyuboslav_Terziev_Universal.vcf" download class="btn">+ Add to Contacts</a>
+  </div>
 </body>
 </html>
